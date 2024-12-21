@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 
+import cloudinary
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -40,6 +43,7 @@ INSTALLED_APPS = [
     'lindavista',
     'rest_framework',
     'corsheaders',
+    'cloudinary'
 ]
 
 MIDDLEWARE = [
@@ -126,3 +130,11 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
+
+
+# Configuration       
+cloudinary.config( 
+    cloud_name = "dqcwzjq6y", 
+    api_key = "566917756591538", 
+    api_secret = "LltkB2F0bEatMewc7wfAGuhjlc0", # Click 'View API Keys' above to copy your API secret
+)
