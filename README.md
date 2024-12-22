@@ -49,8 +49,8 @@ El proyecto está organizado en dos carpetas principales:
 ## Imágenes del Proyecto
 
 
-![Imagen 1](https://github.com/JulioChura/consultaInmoviliaria/blob/main/frontend/img/1.png)
-![Imagen 2](https://github.com/JulioChura/consultaInmoviliaria/blob/main/frontend/img/2.png)
+![Imagen 1](https://raw.githubusercontent.com/JulioChura/consultaInmoviliaria/main/frontend/img/1.png)
+![Imagen 1](https://raw.githubusercontent.com/JulioChura/consultaInmoviliaria/main/frontend/img/2.png)
 
 
 
