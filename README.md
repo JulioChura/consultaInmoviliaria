@@ -1,4 +1,4 @@
-![2](https://github.com/user-attachments/assets/0638b07c-6208-4e84-853d-a752b98567f9)# Proyecto Inmobiliaria - Consulta Inmobiliaria
+# Proyecto Inmobiliaria - Consulta Inmobiliaria
 
 Este proyecto permite realizar consultas en lenguaje natural sobre la base de datos de viviendas. Las consultas se procesan usando un backend en **Django** y se presentan en una interfaz de usuario construida con **Vue.js**.
 
@@ -48,10 +48,7 @@ El proyecto está organizado en dos carpetas principales:
 
 ## Imágenes del Proyecto
 
-
-
 ![1](https://github.com/user-attachments/assets/d4043edb-083d-4ec0-840f-6a593871fd14)
-
 ![2](https://github.com/user-attachments/assets/5a6f82a3-4a7e-4650-942c-3d767e82f69f)
-![Uploading 2.png…]()
+
 
