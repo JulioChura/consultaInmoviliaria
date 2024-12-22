@@ -1,92 +1,58 @@
-# Proyecto de Búsqueda en Lenguaje Natural con Django y Vue.js
+# Proyecto Inmobiliaria - Consulta Inmobiliaria
 
-Este proyecto permite realizar consultas en lenguaje natural a una base de datos de viviendas. Utilizando un enfoque innovador con **Django** y **Vue.js**, se facilita la búsqueda de propiedades a través de frases como "Busco un piso en el centro" o "Deseo una casa con 3 habitaciones".
+Este proyecto permite realizar consultas en lenguaje natural sobre la base de datos de viviendas. Las consultas se procesan usando un backend en **Django** y se presentan en una interfaz de usuario construida con **Vue.js**.
 
-## Tecnologías utilizadas
+## Tecnologías Utilizadas
 
-Este proyecto está compuesto por las siguientes tecnologías:
+![Django](https://img.shields.io/badge/Django-3.2-blue)
+![Vue](https://img.shields.io/badge/Vue-3.2-green)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-2.0-blue)
+![Python](https://img.shields.io/badge/Python-3.9-yellow)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-lightgrey)
 
-- **Django**: Framework para desarrollo web basado en Python. Gestiona la API que recibe las consultas y ejecuta las búsquedas en la base de datos.
-- **Vue.js**: Framework progresivo de JavaScript utilizado para el frontend. Permite una experiencia de usuario interactiva y dinámica.
-- **Tailwind CSS**: Framework de CSS para diseñar la interfaz de usuario de manera rápida y moderna.
-- **Axios**: Librería de JavaScript para realizar peticiones HTTP desde el frontend a la API backend.
-- **Cloudinary**: Para gestionar las imágenes de las propiedades de forma eficiente en la web.
-- **MySQL**: Base de datos para almacenar las propiedades de la inmobiliaria.
+- **Backend**: Django, Python
+- **Frontend**: Vue.js, Tailwind CSS
+- **Base de Datos**: MySQL
+- **Almacenamiento de Imágenes**: Cloudinary
 
-## Funcionalidades
+## Estructura del Proyecto
 
-1. **Consulta en Lenguaje Natural**: El usuario puede escribir frases de búsqueda como "Busco un piso con 3 habitaciones" y el sistema las interpreta para hacer una búsqueda en la base de datos.
-2. **Filtros de Búsqueda**: Las consultas se realizan con filtros automáticos por tipo de propiedad, zona, número de dormitorios, etc.
-3. **Interfaz Intuitiva**: Con Vue.js y Tailwind CSS, la página proporciona una interfaz de usuario limpia y fácil de usar.
-4. **Resultados Interactivos**: Muestra los resultados de búsqueda de manera interactiva y amigable.
+El proyecto está organizado en dos carpetas principales:
 
-## Imágenes de la Web
+1. **`backend/`**: Contiene la lógica del servidor y la API RESTful.
+    - El archivo principal de ejecución es `backend/inmobiliaria/manage.py`.
+    - Los controladores y vistas están en `backend/inmobiliaria/views.py`.
 
-### Página principal con formulario de búsqueda
+2. **`frontend/`**: Contiene la interfaz de usuario que interactúa con la API.
+    - Las imágenes del proyecto deben colocarse en la carpeta `frontend/img/`, con los nombres `1.png` y `2.png`.
+    - El proyecto Vue.js se encuentra en `frontend/inmobiliaria/`.
 
-![Formulario de búsqueda](./images/formulario_busqueda.png)
+### Rutas Importantes
 
-### Resultados de búsqueda
-
-![Resultados](./images/resultados_busqueda.png)
-
-## Instrucciones para ejecutar el proyecto
-
-### Backend (Django)
-1. Clona el repositorio en tu máquina local:
+- **Backend**: `backend/inmobiliaria/`
+  - El archivo principal `manage.py` se encuentra en `backend/inmobiliaria/manage.py`.
+  - Para ejecutar el servidor del backend, navega a la carpeta `backend/inmobiliaria/` y ejecuta el siguiente comando:
     ```bash
-    git clone https://github.com/tu_usuario/proyecto-lenguaje-natural.git
-    cd proyecto-lenguaje-natural/backend
-    ```
-
-2. Crea un entorno virtual e instálalo:
-    ```bash
-    python -m venv env
-    source env/bin/activate  # En Windows usa env\Scripts\activate
-    pip install -r requirements.txt
-    ```
-
-3. Realiza las migraciones de la base de datos:
-    ```bash
-    python manage.py migrate
-    ```
-
-4. Crea un superusuario (si lo necesitas):
-    ```bash
-    python manage.py createsuperuser
-    ```
-
-5. Inicia el servidor:
-    ```bash
+    cd backend/inmobiliaria
     python manage.py runserver
     ```
 
-### Frontend (Vue.js)
-1. Navega a la carpeta del frontend:
+- **Frontend**: `frontend/inmobiliaria/`
+  - El proyecto Vue.js se encuentra en `frontend/inmobiliaria/`.
+  - Para instalar las dependencias de **npm** y ejecutar el servidor del frontend, navega a la carpeta `frontend/inmobiliaria/` y ejecuta los siguientes comandos:
     ```bash
-    cd frontend
-    ```
-
-2. Instala las dependencias:
-    ```bash
+    cd frontend/inmobiliaria
     npm install
-    ```
-
-3. Inicia el servidor de desarrollo:
-    ```bash
     npm run serve
     ```
 
-## Contribuciones
+## Imágenes del Proyecto
 
-Si deseas contribuir al proyecto, por favor sigue estos pasos:
 
-1. Haz un fork del repositorio.
-2. Crea una rama para tu característica (`git checkout -b nueva-caracteristica`).
-3. Haz tus cambios y realiza un commit (`git commit -am 'Agregué nueva característica'`).
-4. Haz push a tu rama (`git push origin nueva-caracteristica`).
-5. Crea un pull request.
+Ejemplo de inclusión de imágenes:
 
-## Licencia
+```html
+<img src="./froned/img/1.png" alt="Imagen 1">
+<img src="./fronted/img/2.png" alt="Imagen 2">
 
-Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
+
