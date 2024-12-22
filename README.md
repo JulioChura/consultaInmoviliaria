@@ -48,10 +48,10 @@ El proyecto está organizado en dos carpetas principales:
 
 ## Imágenes del Proyecto
 
-Coloca todas las imágenes del proyecto en la carpeta `frontend/img/`. A continuación, te mostramos las imágenes de ejemplo que aparecen en el proyecto.
 
-![Imagen 1](frontend/img/1.png)
-![Imagen 2](frontend/img/2.png)
+![Imagen 1](https://github.com/JulioChura/consultaInmoviliaria/blob/main/frontend/img/1.png)
+![Imagen 2](https://github.com/JulioChura/consultaInmoviliaria/blob/main/frontend/img/2.png)
+
 
 
 
